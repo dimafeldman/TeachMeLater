@@ -1,0 +1,17 @@
+# Ignore configuration files
+*.sublime*
+
+# Ignore tempfiles.
+.DS_Store
+*.rdb
+
+#rubymine files
+.idea/
+
+#Sass Caching
+.sass-cache
+*~
+
+# Ignore node modules
+front/node_modules
+back/node_modules
