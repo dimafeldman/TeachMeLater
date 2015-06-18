@@ -10,7 +10,7 @@
  */
 
 module.exports.models = {
-    
+
 
 
   /***************************************************************************
@@ -29,10 +29,10 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ** *************************************************************************/
-    
-    
-    
-  connection : 'mongodb',
+
+
+
+  connection : 'someMongoDb',
   migrate: 'alter'
 
 };

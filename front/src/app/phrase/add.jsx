@@ -28,9 +28,9 @@ var PhraseAdd = React.createClass({
         }
 
         $.ajax({
-            url: BASE_URL + 'phrase/create/',
+            url: BASE_URL + 'phrase/add/',
             method: 'post',
-            data: {value: phrase},
+            data: {phrase: phrase},
             success: function(data) {
                 //this.setState({value: phrase});
                 this.refs.phrase.setValue('');

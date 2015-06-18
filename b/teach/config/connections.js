@@ -31,14 +31,14 @@ module.exports.connections = {
   localDiskDb: {
     adapter: 'sails-disk'
   },
-    
-    someMongoDb: {
+
+  someMongoDb: {
     adapter: 'sails-mongo',
-    host: 'localhost', // defaults to `localhost` if omitted 
-    port: 27017, // defaults to 27017 if omitted 
-    user: 'admin', // or omit if not relevant 
-    password: 'admin', // or omit if not relevant 
-    database: 'teachDB' // or omit if not relevant 
+    host: 'localhost', // defaults to `localhost` if omitted
+    port: 27017, // defaults to 27017 if omitted
+    user: '', // or omit if not relevant
+    password: '', // or omit if not relevant
+    database: 'teachDB' // or omit if not relevant
   },
 
   /***************************************************************************
