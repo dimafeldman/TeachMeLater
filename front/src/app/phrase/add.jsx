@@ -48,10 +48,10 @@ var PhraseAdd = React.createClass({
             state  = this.state;
 
         return (
-            <Paper zDepth={0} innerClassName="cont-inner">
+            <Paper zDepth={0} className="cont-inner">
                 <form onSubmit={this.handleSubmit}>
-                    <TextField ref="phrase" hintText="A phrase that you want to learn" floatingLabelText="Phrase" />
-                    <RaisedButton label="Add" primary={true} />
+                    <TextField ref="phrase" hintText="A phrase that you want to learn" floatingLabelText="Phrase" style={{display: 'block', margin: '0 auto'}} />
+                    <RaisedButton label="Add" primary={true} style={{margin: '10px auto', maxWidth: '100', display: 'block'}} />
                 </form>
             </Paper>
         );

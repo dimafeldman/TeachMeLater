@@ -27,7 +27,6 @@
     "gulp-notify": "^2.1.0",
     "gulp-util": "^3.0.1",
     "jquery": "^2.1.4",
-    "material-ui-sass": "^0.7.5",
     "pretty-hrtime": "^0.2.2",
     "react-router": "^0.13.3",
     "reactify": "^0.17.1",
