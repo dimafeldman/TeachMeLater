@@ -2,7 +2,8 @@ var React = require('react'),
     Router = require('react-router'),
     Material = require('material-ui'),
     ThemeManager = new Material.Styles.ThemeManager(),
-
+    FlatButton = Material.FlatButton,
+    FontIcon = Material.FontIcon,
     Toolbar = Material.Toolbar,
     ToolbarGroup = Material.ToolbarGroup,
     DropDownMenu = Material.DropDownMenu,
@@ -40,12 +41,11 @@ var AppNavigation = React.createClass({
         };
 
         return (
-            <Toolbar>
+            <Toolbar style={{background: '#e1f5fe', paddingLeft: 10}}>
                 <ToolbarGroup key={0} float="left">
-                    <DropDownMenu menuItems={state.actionUrls} onChange={onChangeDropDown} />
-                </ToolbarGroup>
-                <ToolbarGroup key={1} float="right">
-                    <RaisedButton onTouchTap={that.transitionTo.bind(this, 'phraseAdd')} url={state.createPhraseUrl} label="Add Phrase" primary={true} />
+                    <FlatButton linkButton={true} onClick={that.transitionTo.bind(this, 'phraseActions')} label="Main" secondary={true}>
+                        <FontIcon style={{float: 'left', marginTop: 5, marginLeft: 5}} className="fa fa-home"/>
+                    </FlatButton>
                 </ToolbarGroup>
             </Toolbar>
         );

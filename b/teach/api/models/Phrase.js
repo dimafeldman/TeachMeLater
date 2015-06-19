@@ -7,11 +7,55 @@
 
 module.exports = {
 
-  attributes: {
-    phrase: {
-      required: true,
-      type: 'string'
+    attributes: {
+        resolved: {
+          type: 'boolean',
+          defaultsTo: false
+        },
+
+        searchPage: {
+          type: 'string',
+        },
+
+        resultPage: {
+          type: 'string',
+        },
+
+        value: {
+          type: 'string',
+          required: true
+        },
+
+        value_lower_case: {
+          type: 'string',
+          required: true
+        },
+
+        active: {
+          type: 'boolean',
+          defaultsTo: true
+        },
+
+        createdAt: {
+          type: 'datetime'
+        },
+
+        userId: {
+          type: 'string',
+          defaultsTo: '0'
+        },
+
+        wikiResult: {
+          type: 'string'
+        },
+
+        stackResult: {
+          type: 'string'
+        },
+
+        googleResult: {
+          type: 'string'
+        }
     }
-  }
 };
 

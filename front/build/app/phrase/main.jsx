@@ -1,6 +1,9 @@
 var React        = require('react'),
     Router       = require('react-router'),
-    RouteHandler = Router.RouteHandler;
+    RouteHandler = Router.RouteHandler,
+    Material     = require('material-ui'),
+    ThemeManager = new Material.Styles.ThemeManager(),
+    RaisedButton = Material.RaisedButton;
 
 var PhraseMain = React.createClass({
 
@@ -12,4 +15,4 @@ var PhraseMain = React.createClass({
     }
 });
 
-exports.Main = PhraseMain;
+module.exports = PhraseMain;

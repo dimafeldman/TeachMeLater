@@ -40,6 +40,11 @@ module.exports.routes = {
     action: 'create'
   },
 
+  'get /phrase/check': {
+    controller: 'PhraseController',
+    action: 'check'
+  }
+
 
   /***************************************************************************
   *                                                                          *

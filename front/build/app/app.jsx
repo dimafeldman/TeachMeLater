@@ -7,7 +7,7 @@
     var React = require('react'),
         Router = require('react-router'),
 
-        BASE_URL = 'http://localhost:1337/',
+        BASE_URL = 'https://localhost:1337/',
         injectTapEventPlugin = require("react-tap-event-plugin");
 
     window.$ = require('jquery');

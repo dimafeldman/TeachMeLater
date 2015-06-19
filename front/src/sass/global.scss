@@ -1,12 +1,27 @@
 @import "reset";
 @import "base";
+@import "font-awesome/font-awesome";
 
-.cont-main {
+$window_width: 450px !default;
+$window_height: 300px !default;
 
+body {
+    width: $window_width;
+    height: $window_height;
 }
 
 .cont-inner {
     padding: 25px;
-    max-width: 450px;
+    max-width: $window_width;
     margin: 0 auto;
+    max-height: 450px;
+    min-height: $window_height;
+    overflow: scroll;
+}
+
+.header-h2 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 16px;
+    margin-bottom: 12px;
 }

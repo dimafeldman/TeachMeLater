@@ -11,6 +11,7 @@ var React = require('react'),
     PhraseAdd = require('./phrase/add.jsx'),
     PhraseList = require('./phrase/list.jsx'),
     PhraseShow = require('./phrase/show.jsx'),
+    PhraseActions = require('./phrase/actions.jsx'),
 
     AppNavigation = require('./navigation.jsx');
 
@@ -52,11 +53,13 @@ var App = React.createClass({
 
 var AppRoutes = (
     <Route path="/" handler={App}>
+        <DefaultRoute handler={PhraseActions}/>
         <Route name="phraseMain" path="phrase" handler={PhraseMain}>
             <Route name="phraseList" path="list" handler={PhraseList}/>
             <Route name="phraseShow" path="show/:phraseId" handler={PhraseShow}/>
             <Route name="phraseAdd" path="add" handler={PhraseAdd}/>
-            <DefaultRoute handler={PhraseList}/>
+            <Route name="phraseActions" path="actions" handler={PhraseActions}/>
+            <DefaultRoute handler={PhraseActions}/>
         </Route>
     </Route>
 );

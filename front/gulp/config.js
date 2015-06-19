@@ -13,7 +13,7 @@ module.exports = {
     ]
   },
   markup: {
-    src: src + "/www/**",
+    src: src + "/**",
     dest: dest
   },
   browserify: {
